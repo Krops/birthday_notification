@@ -72,9 +72,9 @@ def main():
     # create command line parser
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--ifile", type=str,
-                        help="input cvs file ")
+                        help="input cvs file <name>,<born day>,...")
     parser.add_argument("-o", "--ofile", type=str,
-                        help="output cvs file ")
+                        help="output email file ")
     parser.add_argument("-e", "--email", type=str,
                         help="output email adress ")
     args = parser.parse_args()
