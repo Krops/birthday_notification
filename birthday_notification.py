@@ -33,7 +33,7 @@ def get_birth(inputfile, send_to=None, outputfile=None, password=None, serverSMT
     a = ''
     for i in fp:
         i = i.rstrip('\n')
-        # ganarate birth day from born date
+        # generate birth day from born date
         b = i.split(",")[1][0:6] + datetime.datetime.now().year.__str__()
         # get birth day delay
         birth_time = datetime.datetime.strptime(b, "%d.%m.%Y")
